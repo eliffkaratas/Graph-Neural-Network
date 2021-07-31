@@ -2,28 +2,44 @@
 Graph Neural Network applied for MiniGC dataset's graph type classification
 
 Parameter for MiniGCDataset(num_graphs,min_num_v,max_num_v, seed=0): 
+
 num_graphs: int (Number of graphs in this dataset) 
+
 min_num_v: int (Minimum number of nodes for graphs) 
+
 max_num_v: int (Maximum number of nodes for graphs) 
+
 seed : int, default is 0 
+
 Random seed for data generation 
 
+
 Attributes for MiniGCDataset: 
+
 num_graphs : int (Number of graphs) 
+
 min_num_v : int (The minimum number of nodes) 
+
 max_num_v : int (The maximum number of nodes) 
+
 num_classes : int (The number of classes) [1] 
-In order to use the MiniGCDataset, we first need to import the DGLGraph from DGL 
-(Deep Graph Library) library.
+
+In order to use the MiniGCDataset, we first need to import the DGLGraph from DGL (Deep Graph Library) library.
+
 It is base graph class. It helps to create graphs. 
-Node and edge features are stored as a dictionary from the feature name to the feature data 
-(in tensor). 
+
+Node and edge features are stored as a dictionary from the feature name to the feature data (in tensor). 
+
+
 DGL graph accepts graph data of multiple formats: 
+
 NetworkX graph, 
+
 scipy matrix, 
+
 DGLGraph. 
-If the input graph data is DGLGraph, the constructed DGLGraph only contains its graph 
-index. 
+
+If the input graph data is DGLGraph, the constructed DGLGraph only contains its graph index. 
 
 Graph Normalization 
 Before generating graphs, some normalization processes were defined. These are ensuring 
