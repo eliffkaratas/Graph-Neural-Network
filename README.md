@@ -41,13 +41,13 @@ DGLGraph.
 
 If the input graph data is DGLGraph, the constructed DGLGraph only contains its graph index. 
 
-Graph Normalization 
+**Graph Normalization **
 
 Before generating graphs, some normalization processes were defined. These are ensuring 
 that number of nodes and number of edges take values in the range 0-1. These operations are 
 done with the help of the PyTorch library.
 
-Algorithm of the Project 
+**Algorithm of the Project **
 
 Mini graph classification dataset class is compatible with pytorch’s Dataset class. That's 
 why I couldn't use TensorFlow and scikit-learn libraries for classification algorithms. In the 
@@ -58,4 +58,4 @@ hidden layers and output layer. A graph will be given to the input layers and th
 graph will be displayed from the output layers. Since we have 8 different graph types, our 
 output layer dimension will be 8.
 
-All of the results and information can be found in PDF file.
+**All of the results and information can be found in PDF file.**
